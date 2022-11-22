@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Web Design | About Us</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">company</span> web design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class=""><a href="/">Home</a></li>
+                    <li class="{{ active }}"><a href="about">About</a></li>
+                    <li class=""><a href="services">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="newsletter">
+        <div class="container">
+            <h1>subscribe to our newsletter</h1>
+            <form action="#">
+                <input type="email" name="email" id="email" placeholder="enter email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">About Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nam culpa hic? Esse, temporibus ex!
+                    Quae, necessitatibus nulla debitis voluptate perferendis excepturi qui molestias suscipit quaerat
+                    quo, facilis hic laborum accusantium ex tenetur unde ipsa inventore nihil, quos doloribus aperiam
+                    vero quis! Quasi, dolorem dolores aliquid architecto sint ratione, omnis reprehenderit minima cumque
+                    expedita tempore quidem, id perferendis sunt dolorum ad! Ea iusto ex consequatur recusandae,
+                    cupiditate eveniet ipsam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                    tenetur, nihil reiciendis quo natus voluptate laudantium a. Esse, distinctio necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nihil ipsum odio minima ut illo
+                    quam debitis, perferendis eveniet atque repellat aliquid harum quae eum, facilis, ratione iure?
+                    Fugit sapiente doloremque sit quibusdam eum aut fugiat quam ullam, itaque culpa consequatur, in
+                    quidem velit nostrum quia modi aperiam odit sint nulla? Ab doloribus animi atque quo molestiae non,
+                    alias amet repellat nisi. Soluta sunt numquam explicabo, error assumenda, corrupti magni aliquam
+                    dignissimos atque mollitia incidunt, illo dicta eaque quae sed.</p>
+            </article>
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>What we do</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, saepe, quaerat dolore cumque
+                        eaque
+                        rerum esse velit quidem neque non porro rem quo eum vero architecto accusantium. Similique vel
+                        magnam praesentium, nisi unde, dolorem tempore accusamus molestias recusandae quibusdam illum!
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <p>Company Web Design &copy; 2022</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Web Design | Services</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">company</span> web design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class=""><a href="/">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li class="{{ active }}"><a href="services">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="newsletter">
+        <div class="container">
+            <h1>subscribe to our newsletter</h1>
+            <form action="# ">
+                <input type="email" name="email" id="email" placeholder="enter email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Services</h1>
+                <ul id="services">
+                    <li>
+                        <h3>Website Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam, ducimus optio
+                            laborum consectetur dolore. Aperiam necessitatibus id pariatur tempore facere earum animi
+                            maxime ea quod odit sequi eligendi est soluta rem, ut eveniet beatae officia! Aut dolor
+                            culpa laborum ducimus itaque, eveniet illo eos reprehenderit accusamus recusandae maxime
+                            suscipit!</p>
+                        <p>Pricing: $1,000 - $3,000</p>
+                    </li>
+                    <li>
+                        <h3>Website Mentainance</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam, ducimus optio
+                            laborum consectetur dolore. Aperiam necessitatibus id pariatur tempore facere earum animi
+                            maxime ea quod odit sequi eligendi est soluta rem, ut eveniet beatae officia! Aut dolor
+                            culpa laborum ducimus itaque, eveniet illo eos reprehenderit accusamus recusandae maxime
+                            suscipit!</p>
+                        <p>Pricing: $250 per month</p>
+                    </li>
+                    <li>
+                        <h3>Website Hosting</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aperiam, ducimus optio
+                            laborum consectetur dolore. Aperiam necessitatibus id pariatur tempore facere earum animi
+                            maxime ea quod odit sequi eligendi est soluta rem, ut eveniet beatae officia! Aut dolor
+                            culpa laborum ducimus itaque, eveniet illo eos reprehenderit accusamus recusandae maxime
+                            suscipit!</p>
+                        <p>Pricing: $25 per month</p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>get a quote</h3>
+                    <form action="#" class="quote">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <div class="quote-button">
+                            <input type="submit" class="button_1" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <p>Company Web Design &copy; 2022</p>
+    </footer>
+
+</body>
+
+</html>

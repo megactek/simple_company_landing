@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Web Design | Welcome</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">company</span> web design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="{{ active }}"><a href="/">Home</a></li>
+                    <li class=""><a href="about">About</a></li>
+                    <li class=""><a href="services">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>
+                affordable professional web design
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque saepe illum quisquam?</p>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+            <h1>subscribe to our newsletter</h1>
+            <form action="# ">
+                <input type="email" name="email" id="email"  placeholder="enter email..." >
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <h3>HTML5 Markup</h3>
+                <img src="{% static 'img/nHtml5.png' %}" alt="htmlLogo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illo obcaecati praesentium deleniti id earum. Ipsam vero blanditiis error iste!</p>
+            </div>
+            <div class="box">
+                <h3>CSS3 Styling</h3>
+                <img src="{% static 'img/newCss3.jpg' %}" alt="css3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illo obcaecati praesentium deleniti id earum. Ipsam vero blanditiis error iste!</p>
+            </div>
+            <div class="box">
+                <h3>Graphic Design</h3>
+                <img src="{% static 'img/comp.png' %}" alt="computer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illo obcaecati praesentium deleniti id earum. Ipsam vero blanditiis error iste!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Company Web Design &copy; 2022</p>
+    </footer>
+
+</body>
+
+</html>
